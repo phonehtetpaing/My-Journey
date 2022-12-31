@@ -1,0 +1,19 @@
+# IntelliJ IDE Files
+.idea
+*.iml
+
+#VS Code IDE Files
+.vscode
+.history
+.settings
+
+#OS Files
+_MACOSX
+.DS_Store
+
+#git Files
+.git
+
+#Project Files
+*.log
+node_modules

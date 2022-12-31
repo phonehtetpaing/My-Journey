@@ -1,0 +1,48 @@
+{
+  "name": "my-journey",
+  "version": "1.0.0",
+  "description": "This application is for showing my journey of life.",
+  "author": "Phone Htet Paing.",
+  "private": true,
+  "license": "UNLINCENSED",
+  "type": "module",
+  "main": "app.js",
+  "engines": {
+    "node": "v19.0.0",
+    "npm": "8.19.2"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=local npx nodemon app.js",
+    "start-dev": "cross-env NODE_ENV=development node app.js",
+    "start-prod": "cross-env NODE_ENV=production node app.js",
+    "test": "eslint . --fix && mocha",
+    "fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "apollo-server-express": "^3.10.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "express": "^4.18.1",
+    "lodash": "^4.17.21",
+    "express-mongo-sanitize": "^2.2.0",
+    "graphql": "^16.6.0",
+    "graphql-depth-limit": "^1.1.0",
+    "graphql-type-json": "^0.3.2",
+    "helmet": "^6.0.0",
+    "winston": "^3.8.1",
+    "mongoose": "^6.5.4",
+    "uuid": "^9.0.0",
+    "simpl-schema": "^1.12.3",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "husky": "^8.0.1",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.19"
+  }
+}
